@@ -90,7 +90,7 @@ export default function FarmFullNodeConnections() {
       tooltip={(
         <Trans>
           {'The full node that your farmer is connected to is below. '}
-          <Link target="_blank" href="https://github.com/Flax-Network/melati-blockchain/wiki/Network-Architecture">
+          <Link target="_blank" href="https://github.com/Melati-Network/melati-blockchain/wiki/Network-Architecture">
             Learn more
           </Link>
         </Trans>

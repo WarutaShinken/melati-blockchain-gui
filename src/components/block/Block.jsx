@@ -309,7 +309,7 @@ export default function Block() {
         title={(
           <BlockTitle>
             <Trans>
-              Block at height {blockRecord.height} in the Flax
+              Block at height {blockRecord.height} in the Melati
               blockchain
             </Trans>
           </BlockTitle>
