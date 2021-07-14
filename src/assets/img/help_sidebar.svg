@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X7 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="7.3679mm" height="7.368mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 411 411"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str1 {stroke:#332C2B;stroke-width:9.43574}
+    .str2 {stroke:#332C2B;stroke-width:11.1468}
+    .str0 {stroke:#332C2B;stroke-width:14.1508}
+    .fil0 {fill:none}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_1766435889696">
+   <path class="fil0 str0" d="M147 147c-32,32 -32,85 0,117 32,32 84,32 117,0 32,-32 32,-85 0,-117 -33,-32 -85,-32 -117,0z"/>
+   <g>
+    <path class="fil0 str1" d="M279 92c-10,11 -8,28 3,37 11,10 27,9 37,-3 9,-11 8,-27 -3,-37 -11,-9 -28,-8 -37,3z"/>
+    <path class="fil0 str1" d="M204 55c-9,11 -8,27 3,37 11,9 28,8 37,-3 10,-11 8,-28 -3,-37 -11,-10 -27,-8 -37,3z"/>
+    <path class="fil0 str1" d="M118 65c-10,11 -8,28 3,37 11,10 27,8 37,-3 9,-11 8,-27 -3,-37 -11,-9 -28,-8 -37,3z"/>
+    <path class="fil0 str1" d="M57 126c-9,11 -8,27 3,37 11,9 28,8 37,-3 10,-11 9,-28 -2,-37 -11,-10 -28,-8 -38,3z"/>
+    <path class="fil0 str1" d="M49 212c-9,11 -8,27 3,37 11,9 28,8 37,-3 10,-11 9,-28 -3,-37 -11,-10 -27,-9 -37,3z"/>
+    <path class="fil0 str1" d="M84 287c-9,11 -8,28 3,37 11,10 28,9 37,-2 10,-11 8,-28 -3,-38 -11,-9 -27,-8 -37,3z"/>
+    <path class="fil0 str1" d="M159 327c-10,11 -8,28 3,37 11,10 27,8 37,-3 9,-11 8,-27 -3,-37 -11,-9 -28,-8 -37,3z"/>
+    <path class="fil0 str1" d="M246 310c-9,11 -8,28 3,38 11,9 28,8 37,-3 10,-11 8,-28 -3,-37 -11,-10 -27,-9 -37,2z"/>
+   </g>
+   <path class="fil0 str2" d="M398 161l-84 0 0 89 84 0c7,-29 7,-60 0,-89z"/>
+   <path class="fil0 str0" d="M65 65c-77,78 -77,203 0,281 78,77 203,77 280,0 78,-78 78,-203 0,-281 -77,-77 -202,-77 -280,0z"/>
+  </g>
+ </g>
+</svg>
