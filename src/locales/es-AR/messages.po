@@ -216,12 +216,12 @@ msgid "Block VDF Iterations"
 msgstr "Iteraciones de Bloque VDF"
 
 #: src/components/block/Block.jsx:311
-msgid "Block at height {0} in the Flax blockchain"
-msgstr ""
+#~ msgid "Block at height {0} in the Flax blockchain"
+#~ msgstr ""
 
-#: src/components/block/Block.jsx:338
-#~ msgid "Block at height {0} in the Melati blockchain"
-#~ msgstr "Bloque en la altura {0} en la Blockchain de Melati"
+#: src/components/block/Block.jsx:311
+msgid "Block at height {0} in the Melati blockchain"
+msgstr "Bloque en la altura {0} en la Blockchain de Melati"
 
 #: src/components/fullNode/FullNode.jsx:331
 #~ msgid "Block hash"
@@ -682,12 +682,12 @@ msgid "Edit"
 msgstr "Editar"
 
 #: src/components/wallet/WalletImport.tsx:142
-msgid "Enter the 24 word mnemonic that you have saved in order to restore your Flax wallet."
-msgstr ""
+#~ msgid "Enter the 24 word mnemonic that you have saved in order to restore your Flax wallet."
+#~ msgstr ""
 
-#: src/components/wallet/WalletImport.tsx:147
-#~ msgid "Enter the 24 word mnemonic that you have saved in order to restore your Melati wallet."
-#~ msgstr "Ingresa las 24 palabras mnemotécnicas que guardaste para restaurar tu billetera de Melati."
+#: src/components/wallet/WalletImport.tsx:142
+msgid "Enter the 24 word mnemonic that you have saved in order to restore your Melati wallet."
+msgstr "Ingresa las 24 palabras mnemotécnicas que guardaste para restaurar tu billetera de Melati."
 
 #: src/components/farm/FarmerStatus.tsx:21
 #: src/components/farm/FarmerStatus.tsx:22
@@ -852,8 +852,8 @@ msgid "Finished"
 msgstr "Completado"
 
 #: src/components/wallet/Wallets.tsx:56
-msgid "Flax Wallet"
-msgstr ""
+#~ msgid "Flax Wallet"
+#~ msgstr ""
 
 #: src/electron/main.tsx:408
 msgid "Follow on Twitter"
@@ -1146,9 +1146,9 @@ msgstr "Melati"
 msgid "Melati Blockchain Wiki"
 msgstr "Wiki de la Blockchain de Melati"
 
-#: src/components/wallet/standard/WalletStandard.tsx:647
-#~ msgid "Melati Wallet"
-#~ msgstr "Monedero Melati"
+#: src/components/wallet/Wallets.tsx:56
+msgid "Melati Wallet"
+msgstr "Monedero Melati"
 
 #: src/components/fullNode/FullNodeConnections.tsx:51
 msgid "MiB Up/Down"
@@ -2472,12 +2472,12 @@ msgid "Weight is the total added difficulty of all sub blocks up to and includin
 msgstr "El peso es la dificultad total añadida de todos los subbloques hasta e incluyendo este"
 
 #: src/components/selectKey/SelectKey.tsx:115
-msgid "Welcome to Flax. Please log in with an existing key, or create a new key."
-msgstr ""
+#~ msgid "Welcome to Flax. Please log in with an existing key, or create a new key."
+#~ msgstr ""
 
-#: src/components/selectKey/SelectKey.tsx:112
-#~ msgid "Welcome to Melati. Please log in with an existing key, or create a new key."
-#~ msgstr "Bienvenidos a Melati. Por favor inicie sesión con una llave existente o cree una nueva."
+#: src/components/selectKey/SelectKey.tsx:115
+msgid "Welcome to Melati. Please log in with an existing key, or create a new key."
+msgstr "Bienvenidos a Melati. Por favor inicie sesión con una llave existente o cree una nueva."
 
 #: src/components/wallet/WalletAdd.tsx:66
 msgid "Welcome! The following words are used for your wallet backup. Without them, you will lose access to your wallet, keep them safe! Write down each word along with the order number next to them. (Order is important)"

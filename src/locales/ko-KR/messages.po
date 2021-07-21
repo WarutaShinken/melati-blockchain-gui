@@ -216,12 +216,12 @@ msgid "Block VDF Iterations"
 msgstr "블록 VDF 반복"
 
 #: src/components/block/Block.jsx:311
-msgid "Block at height {0} in the Flax blockchain"
-msgstr ""
+#~ msgid "Block at height {0} in the Flax blockchain"
+#~ msgstr ""
 
-#: src/components/block/Block.jsx:338
-#~ msgid "Block at height {0} in the Melati blockchain"
-#~ msgstr "Melati 블록체인 높이 {0} 에 있는 블록"
+#: src/components/block/Block.jsx:311
+msgid "Block at height {0} in the Melati blockchain"
+msgstr "Melati 블록체인 높이 {0} 에 있는 블록"
 
 #: src/components/fullNode/FullNode.jsx:331
 #~ msgid "Block hash"
@@ -682,12 +682,12 @@ msgid "Edit"
 msgstr "편집"
 
 #: src/components/wallet/WalletImport.tsx:142
-msgid "Enter the 24 word mnemonic that you have saved in order to restore your Flax wallet."
-msgstr ""
+#~ msgid "Enter the 24 word mnemonic that you have saved in order to restore your Flax wallet."
+#~ msgstr ""
 
-#: src/components/wallet/WalletImport.tsx:147
-#~ msgid "Enter the 24 word mnemonic that you have saved in order to restore your Melati wallet."
-#~ msgstr "치아 지갑을 복구하기 위해서 24자로 된 니모닉 단어를 입력하세요."
+#: src/components/wallet/WalletImport.tsx:142
+msgid "Enter the 24 word mnemonic that you have saved in order to restore your Melati wallet."
+msgstr "치아 지갑을 복구하기 위해서 24자로 된 니모닉 단어를 입력하세요."
 
 #: src/components/farm/FarmerStatus.tsx:21
 #: src/components/farm/FarmerStatus.tsx:22
@@ -852,8 +852,8 @@ msgid "Finished"
 msgstr "완료됨"
 
 #: src/components/wallet/Wallets.tsx:56
-msgid "Flax Wallet"
-msgstr ""
+#~ msgid "Flax Wallet"
+#~ msgstr ""
 
 #: src/electron/main.tsx:408
 msgid "Follow on Twitter"
@@ -1146,9 +1146,9 @@ msgstr "치아"
 msgid "Melati Blockchain Wiki"
 msgstr "치아 블록체인 위키"
 
-#: src/components/wallet/standard/WalletStandard.tsx:647
-#~ msgid "Melati Wallet"
-#~ msgstr "치아 지갑"
+#: src/components/wallet/Wallets.tsx:56
+msgid "Melati Wallet"
+msgstr "치아 지갑"
 
 #: src/components/fullNode/FullNodeConnections.tsx:51
 msgid "MiB Up/Down"
@@ -2472,12 +2472,12 @@ msgid "Weight is the total added difficulty of all sub blocks up to and includin
 msgstr "무게는 이것을 포함하여 모든 서브 블록의 총 추가 난이도입니다."
 
 #: src/components/selectKey/SelectKey.tsx:115
-msgid "Welcome to Flax. Please log in with an existing key, or create a new key."
-msgstr ""
+#~ msgid "Welcome to Flax. Please log in with an existing key, or create a new key."
+#~ msgstr ""
 
-#: src/components/selectKey/SelectKey.tsx:112
-#~ msgid "Welcome to Melati. Please log in with an existing key, or create a new key."
-#~ msgstr "Melati에 오신 것을 환영합니다. 사용하고 계신 키로 로그인하시거나 새로운 키를 만드세요."
+#: src/components/selectKey/SelectKey.tsx:115
+msgid "Welcome to Melati. Please log in with an existing key, or create a new key."
+msgstr "Melati에 오신 것을 환영합니다. 사용하고 계신 키로 로그인하시거나 새로운 키를 만드세요."
 
 #: src/components/wallet/WalletAdd.tsx:66
 msgid "Welcome! The following words are used for your wallet backup. Without them, you will lose access to your wallet, keep them safe! Write down each word along with the order number next to them. (Order is important)"

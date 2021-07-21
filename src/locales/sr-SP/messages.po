@@ -216,12 +216,12 @@ msgid "Block VDF Iterations"
 msgstr "Блок VDF понављања"
 
 #: src/components/block/Block.jsx:311
-msgid "Block at height {0} in the Flax blockchain"
-msgstr ""
+#~ msgid "Block at height {0} in the Flax blockchain"
+#~ msgstr ""
 
-#: src/components/block/Block.jsx:338
-#~ msgid "Block at height {0} in the Melati blockchain"
-#~ msgstr "Блок на висини {0} у Melati блокчејну"
+#: src/components/block/Block.jsx:311
+msgid "Block at height {0} in the Melati blockchain"
+msgstr "Блок на висини {0} у Melati блокчејну"
 
 #: src/components/fullNode/FullNode.jsx:331
 #~ msgid "Block hash"
@@ -682,12 +682,12 @@ msgid "Edit"
 msgstr "Уреди"
 
 #: src/components/wallet/WalletImport.tsx:142
-msgid "Enter the 24 word mnemonic that you have saved in order to restore your Flax wallet."
-msgstr ""
+#~ msgid "Enter the 24 word mnemonic that you have saved in order to restore your Flax wallet."
+#~ msgstr ""
 
-#: src/components/wallet/WalletImport.tsx:147
-#~ msgid "Enter the 24 word mnemonic that you have saved in order to restore your Melati wallet."
-#~ msgstr "Унесите мнемонику од 24 речи коју сте сачували да бисте вратили Чија новчаник."
+#: src/components/wallet/WalletImport.tsx:142
+msgid "Enter the 24 word mnemonic that you have saved in order to restore your Melati wallet."
+msgstr "Унесите мнемонику од 24 речи коју сте сачували да бисте вратили Чија новчаник."
 
 #: src/components/farm/FarmerStatus.tsx:21
 #: src/components/farm/FarmerStatus.tsx:22
@@ -852,8 +852,8 @@ msgid "Finished"
 msgstr "Завршено"
 
 #: src/components/wallet/Wallets.tsx:56
-msgid "Flax Wallet"
-msgstr ""
+#~ msgid "Flax Wallet"
+#~ msgstr ""
 
 #: src/electron/main.tsx:408
 msgid "Follow on Twitter"
@@ -1146,9 +1146,9 @@ msgstr "Melati"
 msgid "Melati Blockchain Wiki"
 msgstr "Вики за Melati блокчејн"
 
-#: src/components/wallet/standard/WalletStandard.tsx:647
-#~ msgid "Melati Wallet"
-#~ msgstr "Чија Новчаник"
+#: src/components/wallet/Wallets.tsx:56
+msgid "Melati Wallet"
+msgstr "Чија Новчаник"
 
 #: src/components/fullNode/FullNodeConnections.tsx:51
 msgid "MiB Up/Down"
@@ -2472,12 +2472,12 @@ msgid "Weight is the total added difficulty of all sub blocks up to and includin
 msgstr "Тежина је укупна додата сложеност свих блокова до овог, укључујући и њега"
 
 #: src/components/selectKey/SelectKey.tsx:115
-msgid "Welcome to Flax. Please log in with an existing key, or create a new key."
-msgstr ""
+#~ msgid "Welcome to Flax. Please log in with an existing key, or create a new key."
+#~ msgstr ""
 
-#: src/components/selectKey/SelectKey.tsx:112
-#~ msgid "Welcome to Melati. Please log in with an existing key, or create a new key."
-#~ msgstr "Добродошли у Melati. Пријави се помоћу постојећег кључа или креирај нови кључ."
+#: src/components/selectKey/SelectKey.tsx:115
+msgid "Welcome to Melati. Please log in with an existing key, or create a new key."
+msgstr "Добродошли у Melati. Пријави се помоћу постојећег кључа или креирај нови кључ."
 
 #: src/components/wallet/WalletAdd.tsx:66
 msgid "Welcome! The following words are used for your wallet backup. Without them, you will lose access to your wallet, keep them safe! Write down each word along with the order number next to them. (Order is important)"
