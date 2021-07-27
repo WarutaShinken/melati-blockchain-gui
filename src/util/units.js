@@ -5,14 +5,14 @@ const units = {
 };
 
 const aliases = {
-  melati: ['ch', 'melati', 'Melati'],
+  melati: ['mx', 'melati', 'Melati'],
   mojo: ['mj', 'mojo'],
   colouredcoin: ['cc', 'colouredcoin'],
 };
 
 const display = {
   melati: {
-    format: '{amount} CH',
+    format: '{amount} MX',
     fractionDigits: 12,
   },
   mojo: {

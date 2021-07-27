@@ -64,11 +64,7 @@ const PlotAddNFT = forwardRef((props: Props, ref) => {
         </Flex>
       }
     >
-      {loading && (
-        <Flex alignItems="center">
-          <Loading />
-        </Flex>
-      )}
+      {loading && <Loading center />}
 
       {!loading && hasNFTs && (
         <>

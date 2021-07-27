@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Trans } from '@lingui/macro';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { useHistory } from 'react-router';
 import {
   TooltipTypography,
@@ -29,7 +29,7 @@ import {
 import {
   Delete as DeleteIcon,
   Link as LinkIcon,
-  Payment as PaymentIcon,
+  // Payment as PaymentIcon,
 } from '@material-ui/icons';
 import type PlotNFT from '../../types/PlotNFT';
 import PlotNFTName from './PlotNFTName';
@@ -43,8 +43,9 @@ import { mojo_to_melati } from '../../util/melati';
 import { deleteUnconfirmedTransactions } from '../../modules/incoming';
 import PlotNFTGraph from './PlotNFTGraph';
 import PlotNFTGetPoolLoginLinkDialog from './PlotNFTGetPoolLoginLinkDialog';
-import PlotNFTPayoutInstructionsDialog from './PlotNFTPayoutInstructionsDialog';
+// import PlotNFTPayoutInstructionsDialog from './PlotNFTPayoutInstructionsDialog';
 import getPercentPointsSuccessfull from '../../util/getPercentPointsSuccessfull';
+import encodePuzzleHash from '../../util/toBech32m';
 
 const StyledCard = styled(Card)`
   display: flex;
@@ -81,13 +82,25 @@ export default function PlotNFTCard(props: Props) {
     nft: {
       pool_state: {
         p2_singleton_puzzle_hash,
-        pool_config: { launcher_id, pool_url },
+        pool_config: { launcher_id, pool_url, payout_instructions },
         points_found_24h,
         points_acknowledged_24h,
       },
       pool_wallet_status: { wallet_id },
     },
   } = props;
+
+  const networkPrefix = useSelector(
+    (state: RootState) => state.wallet_state.network_info?.network_prefix,
+  );
+
+  var payoutAddress: string;
+
+  try {
+    payoutAddress = encodePuzzleHash(payout_instructions, networkPrefix)
+  } catch {
+    payoutAddress = payout_instructions;
+  }
 
   const percentPointsSuccessful24 = getPercentPointsSuccessfull(
     points_acknowledged_24h,
@@ -132,9 +145,11 @@ export default function PlotNFTCard(props: Props) {
     openDialog(<PlotNFTGetPoolLoginLinkDialog nft={nft} />);
   }
 
+  /*
   function handlePayoutInstructions() {
     openDialog(<PlotNFTPayoutInstructionsDialog nft={nft} />);
   }
+  */
 
   const rows = [
     {
@@ -284,7 +299,7 @@ export default function PlotNFTCard(props: Props) {
                         </Typography>
                       </MenuItem>
                     )}
-                    {!isSelfPooling && (
+                    {/* !isSelfPooling && (
                       <MenuItem
                         onClick={() => {
                           onClose();
@@ -298,7 +313,7 @@ export default function PlotNFTCard(props: Props) {
                           <Trans>View Payout Instructions</Trans>
                         </Typography>
                       </MenuItem>
-                    )}
+                    ) */}
                     <MenuItem
                       onClick={() => {
                         onClose();
@@ -349,6 +364,17 @@ export default function PlotNFTCard(props: Props) {
             <Tooltip title={launcher_id} copyToClipboard>
               <Typography variant="body2" noWrap>
                 {launcher_id}
+              </Typography>
+            </Tooltip>
+          </Flex>
+
+          <Flex flexDirection="column" gap={1}>
+            <Typography variant="body1" color="textSecondary" noWrap>
+              <Trans>Payout Address</Trans>
+            </Typography>
+            <Tooltip title={payoutAddress} copyToClipboard>
+              <Typography variant="body2" noWrap>
+                {payoutAddress}
               </Typography>
             </Tooltip>
           </Flex>

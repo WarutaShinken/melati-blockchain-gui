@@ -195,8 +195,7 @@ if (!handleSquirrelEvent()) {
             title: i18n._(/* i18n */ { id: 'Confirm' }),
             message: i18n._(
               /* i18n */ {
-                id:
-                  'Are you sure you want to quit? GUI Plotting and farming will stop.',
+                id: 'Are you sure you want to quit? GUI Plotting and farming will stop.',
               },
             ),
           });
@@ -399,15 +398,15 @@ if (!handleSquirrelEvent()) {
             },
           },
           {
-            label: i18n._(/* i18n */ { id: 'Chat on Discord' }),
+            label: i18n._(/* i18n */ { id: 'Chat on KeyBase' }),
             click: () => {
-              openExternal('https://discord.gg/XCkRSqdQmc');
+              openExternal('https://keybase.io/team/melati_network.public');
             },
           },
           {
             label: i18n._(/* i18n */ { id: 'Follow on Twitter' }),
             click: () => {
-              openExternal('https://twitter.com/melati-network');
+              openExternal('https://twitter.com/MelatiNetwork');
             },
           },
         ],

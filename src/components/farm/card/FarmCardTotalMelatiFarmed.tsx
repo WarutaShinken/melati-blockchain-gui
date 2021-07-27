@@ -6,7 +6,7 @@ import FarmCard from './FarmCard';
 import { mojo_to_melati } from '../../../util/melati';
 import useCurrencyCode from '../../../hooks/useCurrencyCode';
 
-export default function FarmCardTotalFlaxFarmed() {
+export default function FarmCardTotalMelatiFarmed() {
   const currencyCode = useCurrencyCode();
 
   const loading = useSelector(
@@ -17,7 +17,7 @@ export default function FarmCardTotalFlaxFarmed() {
     (state: RootState) => state.wallet_state.farmed_amount?.farmed_amount,
   );
 
-  const totalFlaxFarmed = useMemo(() => {
+  const totalMelatiFarmed = useMemo(() => {
     if (farmedAmount !== undefined) {
       const val = BigInt(farmedAmount.toString());
       return mojo_to_melati(val);
@@ -26,8 +26,8 @@ export default function FarmCardTotalFlaxFarmed() {
 
   return (
     <FarmCard
-      title={<Trans>{currencyCode} Total Flax Farmed</Trans>}
-      value={totalFlaxFarmed}
+      title={<Trans>{currencyCode} Total Melati Farmed</Trans>}
+      value={totalMelatiFarmed}
       loading={loading}
     />
   );

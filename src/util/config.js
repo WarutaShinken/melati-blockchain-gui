@@ -16,7 +16,7 @@ function loadConfig(net) {
     const config_root_dir =
       'MELATI_ROOT' in process.env
         ? process.env.MELATI_ROOT
-        : path.join(os.homedir(), '.Melati', net);
+        : path.join(os.homedir(), '.melati', net);
     const config = yaml.load(
       fs.readFileSync(path.join(config_root_dir, 'config/config.yaml'), 'utf8'),
     );
