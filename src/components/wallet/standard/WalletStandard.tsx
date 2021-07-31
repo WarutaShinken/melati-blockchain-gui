@@ -1,4 +1,4 @@
-import React /* , { ReactNode } */ from 'react';
+import React , { ReactNode } from 'react';
 import { Trans } from '@lingui/macro';
 import {
   More,
@@ -17,12 +17,10 @@ import { useDispatch, useSelector } from 'react-redux';
 import isNumeric from 'validator/es/lib/isNumeric';
 import { useForm, useWatch } from 'react-hook-form';
 import {
-  /*
   Tooltip,
   Accordion,
   AccordionSummary,
   AccordionDetails,
-  */
   Box,
   Typography,
   Button,
@@ -33,8 +31,8 @@ import {
   MenuItem,
 } from '@material-ui/core';
 import {
-  // ExpandMore as ExpandMoreIcon,
-  // Help as HelpIcon,
+  ExpandMore as ExpandMoreIcon,
+  Help as HelpIcon,
   Delete as DeleteIcon,
 } from '@material-ui/icons';
 import {
@@ -42,15 +40,15 @@ import {
   send_transaction,
   farm_block,
 } from '../../../modules/message';
-import { /* mojo_to_melati_string, */ melati_to_mojo } from '../../../util/melati';
+import { mojo_to_melati_string, melati_to_mojo } from '../../../util/melati';
 import { openDialog } from '../../../modules/dialog';
 import { get_transaction_result } from '../../../util/transaction_result';
 import config from '../../../config/config';
 import type { RootState } from '../../../modules/rootReducer';
 import WalletHistory from '../WalletHistory';
-// import useCurrencyCode from '../../../hooks/useCurrencyCode';
+import useCurrencyCode from '../../../hooks/useCurrencyCode';
 import { deleteUnconfirmedTransactions } from '../../../modules/incoming';
-// import WalletGraph from '../WalletGraph';
+import WalletGraph from '../WalletGraph';
 import WalletCards from './WalletCards';
 import WalletStatus from '../WalletStatus';
 import useOpenDialog from '../../../hooks/useOpenDialog';
@@ -213,7 +211,6 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-/*
 type BalanceCardSubSectionProps = {
   title: ReactNode;
   tooltip?: ReactNode;
@@ -350,7 +347,6 @@ function BalanceCard(props: BalanceCardProps) {
     </Card>
   );
 }
-*/
 
 type SendCardProps = {
   wallet_id: number;
@@ -615,10 +611,11 @@ function AddressCard(props: AddressCardProps) {
 
 type StandardWalletProps = {
   wallet_id: number;
+  showTitle?: boolean;
 };
 
 export default function StandardWallet(props: StandardWalletProps) {
-  const { wallet_id } = props;
+  const { wallet_id, showTitle } = props;
   const dispatch = useDispatch();
   const openDialog = useOpenDialog();
 
@@ -643,44 +640,47 @@ export default function StandardWallet(props: StandardWalletProps) {
     <Flex flexDirection="column" gap={1}>
       <Flex gap={1} alignItems="center">
         <Flex flexGrow={1}>
-          <Typography variant="h5" gutterBottom>
-            <Trans>Melati Wallet</Trans>
-          </Typography>
-        </Flex>
-        <More>
-          {({ onClose }) => (
-            <Box>
-              <MenuItem
-                onClick={() => {
-                  onClose();
-                  handleDeleteUnconfirmedTransactions();
-                }}
-              >
-                <ListItemIcon>
-                  <DeleteIcon />
-                </ListItemIcon>
-                <Typography variant="inherit" noWrap>
-                  <Trans>Delete Unconfirmed Transactions</Trans>
-                </Typography>
-              </MenuItem>
-            </Box>
+          {showTitle && (
+            <Typography variant="h5" gutterBottom>
+              <Trans>Melati Wallet</Trans>
+            </Typography>
           )}
-        </More>
+        </Flex>
+        <Flex gap={1} alignItems="center">
+          <Flex alignItems="center">
+            <Typography variant="body1" color="textSecondary">
+              <Trans>Wallet Status:</Trans>
+            </Typography>
+            &nbsp;
+            <WalletStatus height />
+          </Flex>
+          <More>
+            {({ onClose }) => (
+              <Box>
+                <MenuItem
+                  onClick={() => {
+                    onClose();
+                    handleDeleteUnconfirmedTransactions();
+                  }}
+                >
+                  <ListItemIcon>
+                    <DeleteIcon />
+                  </ListItemIcon>
+                  <Typography variant="inherit" noWrap>
+                    <Trans>Delete Unconfirmed Transactions</Trans>
+                  </Typography>
+                </MenuItem>
+              </Box>
+            )}
+          </More>
+        </Flex>
       </Flex>
 
-      <Flex flexDirection="column" gap={2}>
-        <Flex gap={1} justifyContent="flex-end">
-          <Typography variant="body1" color="textSecondary">
-            <Trans>Wallet Status:</Trans>
-          </Typography>
-          <WalletStatus height />
-        </Flex>
-        <Flex flexDirection="column" gap={3}>
-          <WalletCards wallet_id={wallet_id} />
-          <SendCard wallet_id={wallet_id} />
-          <AddressCard wallet_id={wallet_id} />
-          <WalletHistory walletId={wallet_id} />
-        </Flex>
+      <Flex flexDirection="column" gap={3}>
+        <WalletCards wallet_id={wallet_id} />
+        <SendCard wallet_id={wallet_id} />
+        <AddressCard wallet_id={wallet_id} />
+        <WalletHistory walletId={wallet_id} />
       </Flex>
     </Flex>
   );

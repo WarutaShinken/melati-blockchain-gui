@@ -10,6 +10,7 @@ import {
   Home as HomeIcon,
   Plot as PlotIcon,
   Pool as PoolIcon,
+  Trade as TradeIcon,
 } from '@melati/icons';
 import { Flex, SideBarItem } from '@melati/core';
 import { logOut } from '../../modules/message';
@@ -53,6 +54,11 @@ export default function DashboardSideBar() {
           to="/dashboard/farm"
           icon={<FarmIcon fontSize="large" />}
           title={<Trans>Farm</Trans>}
+        />
+        <SideBarItem
+          to="/dashboard/trade"
+          icon={<TradeIcon fontSize="large" />}
+          title={<Trans>Trade</Trans>}
         />
         <SideBarItem
           to="/dashboard/pool"

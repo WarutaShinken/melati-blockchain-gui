@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react';
 import { linearGradientDef } from '@nivo/core';
 import { ResponsiveLine } from '@nivo/line';
 import { orderBy, groupBy, sumBy, map } from 'lodash';
-// import { Flex, FormatLargeNumber } from '@melati/core';
+import { Flex, FormatLargeNumber } from '@melati/core';
 import { /* Typography, */ Paper } from '@material-ui/core';
 import styled from 'styled-components';
 import useWallet from '../../hooks/useWallet';
